@@ -25,7 +25,7 @@ struct FactModel{
     func getRandomFact()->String{
         
         let randomNumber = GKRandomSource.sharedRandom()
-        .nextIntWithUpperBound(facts.count);
+        .nextInt(upperBound: facts.count);
         
         return facts[randomNumber];
         
