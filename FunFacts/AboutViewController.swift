@@ -7,11 +7,49 @@
 //
 
 import UIKit
+import Foundation
 
 class AboutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+  
+        let urlString = "https://api.forecast.io/forecast/d3250bf407f0579c8355cd39cdd4f9e1/37.5673776,122.048951"
+        
+        let url = URL(string: urlString)
+        URLSession.shared.dataTask(with:url!, completionHandler: {(data, response, error) in
+            if error != nil {
+                print(error)
+            } else {
+                do {
+                    
+                    let parsedData = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String:Any]
+                    let currentConditions = parsedData["currently"] as! [String:Any]
+                    
+                    print(currentConditions)
+                    
+                    let currentTemperatureF = currentConditions["temperature"] as! Double
+                    print(currentTemperatureF)
+                    
+                    
+                    let currentConditions2 = parsedData["currently"] as! [String:Any]
+                    
+                    for (key, value) in currentConditions2 {
+                        print("\(key) - \(value) ")
+                    }
+                    
+                    
+                    
+                } catch let error as NSError {
+                    print(error)
+                }
+            }
+            
+        }).resume()
+    
+        
+        
 
         // Do any additional setup after loading the view.
     }
