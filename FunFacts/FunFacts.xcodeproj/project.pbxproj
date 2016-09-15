@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B52A2D71D8A270E0059C494 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52A2D51D8A270E0059C494 /* AboutViewController.swift */; };
+		5B52A2D81D8A270E0059C494 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B52A2D61D8A270E0059C494 /* AboutViewController.xib */; };
 		83C3D0071D49C9BD008DFC84 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3D0061D49C9BD008DFC84 /* FactModel.swift */; };
 		83C3D0091D49D34C008DFC84 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3D0081D49D34C008DFC84 /* ColorModel.swift */; };
 		83EF9D191D462D0A001D68BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF9D181D462D0A001D68BC /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B52A2D51D8A270E0059C494 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ../AboutViewController.swift; sourceTree = "<group>"; };
+		5B52A2D61D8A270E0059C494 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutViewController.xib; path = ../AboutViewController.xib; sourceTree = "<group>"; };
 		83C3D0061D49C9BD008DFC84 /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
 		83C3D0081D49D34C008DFC84 /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		83EF9D151D462D0A001D68BC /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +109,8 @@
 				83EF9D1A1D462D0A001D68BC /* ViewController.swift */,
 				83C3D0061D49C9BD008DFC84 /* FactModel.swift */,
 				83C3D0081D49D34C008DFC84 /* ColorModel.swift */,
+				5B52A2D51D8A270E0059C494 /* AboutViewController.swift */,
+				5B52A2D61D8A270E0059C494 /* AboutViewController.xib */,
 				83EF9D1C1D462D0A001D68BC /* Main.storyboard */,
 				83EF9D1F1D462D0A001D68BC /* Assets.xcassets */,
 				83EF9D211D462D0A001D68BC /* LaunchScreen.storyboard */,
@@ -240,6 +246,7 @@
 			files = (
 				83EF9D231D462D0A001D68BC /* LaunchScreen.storyboard in Resources */,
 				83EF9D201D462D0A001D68BC /* Assets.xcassets in Resources */,
+				5B52A2D81D8A270E0059C494 /* AboutViewController.xib in Resources */,
 				83EF9D1E1D462D0A001D68BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +275,7 @@
 				83C3D0071D49C9BD008DFC84 /* FactModel.swift in Sources */,
 				83EF9D1B1D462D0A001D68BC /* ViewController.swift in Sources */,
 				83EF9D191D462D0A001D68BC /* AppDelegate.swift in Sources */,
+				5B52A2D71D8A270E0059C494 /* AboutViewController.swift in Sources */,
 				83C3D0091D49D34C008DFC84 /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     @IBOutlet var funFsctButton: UIButton!
     
     
+    @IBAction func aboutClick() {
+        
+        let vc = AboutViewController(nibName: "AboutViewController", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
