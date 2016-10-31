@@ -29,22 +29,12 @@ class ViewController: UIViewController {
     
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-
     @IBAction func showFunFact() {
         let randomColor = ColorModel().getRandomColor()
         view.backgroundColor = randomColor
         funFsctButton.tintColor = randomColor
         funfactLabel.text = factModel.getRandomFact()
     }
-    
-    
-    
 
 }
 
